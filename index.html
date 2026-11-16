@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Relevo: handovers with context for Jira</title>
+    <meta name="description" content="Relevo builds your Jira handover in two minutes: what cannot wait while you are away, who already has the context to cover it, and what changed when you are back. Runs on Atlassian Forge." />
+    
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Relevo: handovers with context for Jira" />
+    <meta property="og:description" content="Go away without your work stalling. Relevo ranks what cannot wait and finds who already has the context to cover it." />
+    <link rel="icon" type="image/svg+xml" href="./icon.svg" />
+    <link rel="stylesheet" href="./site.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Relevo",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Jira Cloud",
+        "description": "Handover planning for Jira: risk-ranked work items, evidence-based cover suggestions, and a return brief.",
+        "author": { "@type": "Person", "name": "Juan Pablo Orjuela Rojas" }
+      }
+    </script>
+  </head>
+  <body>
+    
+
+    <header class="nav">
+      <a class="brand" href="./" aria-label="Relevo home">
+        <img src="./icon.svg" alt="" width="28" height="28" />
+        <span>Relevo</span>
+      </a>
+      <nav aria-label="Main">
+        <a href="#how">How it works</a>
+        <a href="#trust">Security</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      
+      
+      <a class="button button-primary" href="#demo" data-testid="nav-demo">Try the demo</a>
+      
+    </header>
+
+    <main>
+      <section class="hero">
+        <p class="eyebrow">For teams that run on Jira</p>
+        <h1>Take the time off.<br />Your work keeps moving.</h1>
+        <p class="lede">
+          Relevo builds your handover in two minutes. It ranks what cannot wait while you are away, finds who already has the context to cover
+          each item, and tells you what changed the day you are back.
+        </p>
+        <div class="cta-row">
+          <a class="button button-primary button-large" href="#demo" data-testid="hero-demo">Try the live demo</a>
+          
+        </div>
+        <ul class="trust-row">
+          <li>Runs entirely on Atlassian Forge</li>
+          <li>Your data never leaves your site</li>
+          <li>Respects every Jira permission</li>
+        </ul>
+      </section>
+
+      <section id="demo" class="demo" aria-label="Live demo">
+        <div class="browser">
+          <div class="browser-bar">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="browser-url">Jira · Apps · Relevo</span>
+            <a class="browser-open" href="./demo/" target="_blank" rel="noopener">Open full screen ↗</a>
+          </div>
+          <iframe src="./demo/?start=plan" title="Relevo live demo" loading="lazy" data-testid="demo-frame"></iframe>
+        </div>
+        <p class="caption">
+          This is the real app running on a simulated team. Write a note on the three red items, press <strong>Send handover</strong>, then use
+          <strong>Skip to the first day back</strong> to see the return brief.
+        </p>
+      </section>
+
+      <section class="problem">
+        <h2>Handover documents fail the same three ways</h2>
+        <div class="grid three">
+          <article>
+            <h3>They list everything</h3>
+            <p>Twelve tickets with equal weight. Nobody can tell which two will blow up on Thursday.</p>
+          </article>
+          <article>
+            <h3>They pick the wrong cover</h3>
+            <p>Work goes to whoever is free, not to the person who reviewed the pull request and already knows the code.</p>
+          </article>
+          <article>
+            <h3>They stop at the door</h3>
+            <p>You come back to two weeks of notifications and no idea which of your items moved, stalled or shipped.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="how" class="how">
+        <h2>How Relevo works</h2>
+        <ol class="steps">
+          <li>
+            <span class="step-num">1</span>
+            <div>
+              <h3>It ranks what cannot wait</h3>
+              <p>
+                Due dates inside your absence, people blocked by your work, sprints that end while you are out, questions nobody answered.
+                Every score comes with its reasons, so you can disagree with it.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num">2</span>
+            <div>
+              <h3>It finds who has the context</h3>
+              <p>
+                Relevo reads the Teamwork Graph and the history of each item: who was assigned before, who commented, who reviewed the linked
+                pull request, who is on your team. It also checks who is already overloaded or away.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num">3</span>
+            <div>
+              <h3>You confirm, it does the busywork</h3>
+              <p>
+                One click reassigns, adds backups and leaves your note on every work item, where the cover will actually read it. Nothing
+                changes in Jira until you say so.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span class="step-num">4</span>
+            <div>
+              <h3>It briefs you when you return</h3>
+              <p>What needs you, what got done, what moved. Take your reassigned work back in one click.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="features">
+        <h2>Built into the places your team already looks</h2>
+        <div class="grid three">
+          <article>
+            <h3>On every work item</h3>
+            <p>A panel on the Jira work item says who is away, who covers it and the note they left. No more pinging someone on a beach.</p>
+          </article>
+          <article>
+            <h3>In Rovo</h3>
+            <p>Ask the Relevo agent “who is covering PAY-142?” or “plan my handover for the 20th to the 5th”. It drafts; you review and send.</p>
+          </article>
+          <article>
+            <h3>For your own AI tools</h3>
+            <p>Relevo exposes read-only tools over the Atlassian MCP server, so coding assistants know who to ask while the owner is out.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="trust" class="trust">
+        <h2>Security you can explain to your admin in one minute</h2>
+        <div class="grid two">
+          <ul class="checks">
+            <li><strong>Runs on Atlassian.</strong> No external servers, no third-party AI, no data egress. Code and storage live in Atlassian Forge.</li>
+            <li><strong>Acts as you.</strong> Relevo can only see and change what the signed-in user can already see and change in Jira.</li>
+            <li><strong>Stores very little.</strong> Only the handovers you send: dates, the chosen covers and your notes. Work item content stays in Jira.</li>
+            <li><strong>No surprises.</strong> Nothing is reassigned or commented until a person confirms it. The agent can only save drafts.</li>
+          </ul>
+          <div class="scopes">
+            <h3>Permissions it asks for</h3>
+            <dl>
+              <dt>Read and write Jira work</dt>
+              <dd>Read your open items; reassign and comment when you send a handover.</dd>
+              <dt>Read Jira users</dt>
+              <dd>Search for a cover by name.</dd>
+              <dt>Teamwork Graph, read-only</dt>
+              <dd>Teams, pull requests, goals and projects, to find who has context.</dd>
+              <dt>App storage</dt>
+              <dd>Keep the handovers you send.</dd>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="pricing">
+        <h2>Pricing</h2>
+        
+        <div class="price-card" data-testid="pricing-free">
+          <p class="price">Free</p>
+          <p>Relevo is free to install from the Atlassian Marketplace. No card, no trial clock, no usage limits beyond 100 work items per handover.</p>
+        </div>
+        
+        
+      </section>
+
+      <section id="faq" class="faq">
+        <h2>Questions</h2>
+        <details>
+          <summary>Does Relevo use AI to decide who covers my work?</summary>
+          <p>No. Risk scores and cover suggestions are computed with transparent rules from Jira and Teamwork Graph data, and every suggestion lists its evidence. The optional Rovo agent uses your organisation's own Rovo to talk about those results in plain language.</p>
+        </details>
+        <details>
+          <summary>Will it reassign things on its own?</summary>
+          <p>Never. You review the plan, change anything you like, and confirm. The Rovo agent can only save a draft for you to review.</p>
+        </details>
+        <details>
+          <summary>What if our admin has not granted the Teamwork Graph scopes?</summary>
+          <p>Relevo still works. Cover suggestions then rely on Jira history, comments and links alone, and the plan tells you which sources were unavailable.</p>
+        </details>
+        <details>
+          <summary>Can a manager prepare a handover for someone on their team?</summary>
+          <p>Yes. Pick the person, and Relevo plans from the work items you are allowed to see. Jira still decides whether you may reassign them.</p>
+        </details>
+        <details>
+          <summary>Does it work with Jira Service Management?</summary>
+          <p>Yes. The work item panel appears in Jira and Jira Service Management, and handovers include any work item assigned to the person.</p>
+        </details>
+        <details>
+          <summary>What happens to work assigned to me after I leave?</summary>
+          <p>The panel on that work item warns that you are away and that the item is not part of your handover, so the reporter knows to ask your cover.</p>
+        </details>
+      </section>
+
+      <section class="closing">
+        <h2>Your next day off starts with a two-minute handover</h2>
+        <div class="cta-row">
+          <a class="button button-primary button-large" href="#demo">Try the live demo</a>
+          
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <strong>Relevo</strong> · © 2026 Juan Pablo Orjuela Rojas
+      </div>
+      <nav aria-label="Legal">
+        <a href="./privacy.html">Privacy</a>
+        <a href="./terms.html">Terms</a>
+        <a href="./support.html">Support</a>
+      </nav>
+      <p class="fineprint">Relevo is an independent app built on Atlassian Forge. Atlassian, Jira and Rovo are trademarks of Atlassian. The demo shows fictional people and work items.</p>
+    </footer>
+  </body>
+</html>

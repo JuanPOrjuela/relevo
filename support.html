@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Support · Relevo</title>
+    <meta name="description" content="How to get help with Relevo, and answers to common problems." />
+    
+    <link rel="icon" type="image/svg+xml" href="./icon.svg" />
+    <link rel="stylesheet" href="./site.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <a class="brand" href="./" aria-label="Relevo home"><img src="./icon.svg" alt="" width="28" height="28" /><span>Relevo</span></a>
+      <nav aria-label="Main"><a href="./#how">How it works</a><a href="./#trust">Security</a><a href="./#pricing">Pricing</a></nav>
+    </header>
+    <main class="legal">
+      <h1>Support</h1>
+      <p>
+        Relevo is supported by email, Monday to Friday. We aim to answer within two business days. Write to
+        <a href="mailto:juanp.orjuelar@gmail.com" data-testid="support-email">juanp.orjuelar@gmail.com</a>
+        and include your Jira site address, what you expected, and what happened instead. Please do not send work item content or screenshots that
+        show confidential data.
+      </p>
+
+      <h2>Getting started</h2>
+      <ul>
+        <li>In Jira, open <strong>Apps → Relevo</strong>.</li>
+        <li>Choose who is going away and the first and last day, then press <strong>Build handover</strong>.</li>
+        <li>Review the suggested covers, write a note on each item that cannot wait, and press <strong>Send handover</strong>.</li>
+        <li>On your first day back, open the handover to read what changed and take your work back.</li>
+      </ul>
+
+      <h2>Some context sources show as unavailable</h2>
+      <p>Teams, pull requests, goals and projects come from the Teamwork Graph. An organisation admin has to grant those scopes: in Atlassian Administration, open <strong>Apps → Sites → your site → Connected apps → Relevo → Permissions</strong>. Relevo works without them, using Jira history alone.</p>
+
+      <h2>An item says "Not handed over"</h2>
+      <p>Jira refused the change, most often because you lack the "Assign issues" permission in that project, or the cover cannot be assigned work there. The message next to the item is the one Jira returned.</p>
+
+      <h2>A work item I expected is missing from the plan</h2>
+      <p>Relevo shows open work items assigned to the person that you are allowed to see, up to 100 per handover. Finished items and items in projects you cannot browse are left out.</p>
+
+      <h2>The Relevo agent does not appear in Rovo</h2>
+      <p>Rovo has to be enabled for your site. Agents that come with apps are listed in Rovo's agent browser after the app is installed.</p>
+
+      <h2>Connecting your own AI client</h2>
+      <p>An admin enables the tools under <strong>Connected apps → Relevo</strong>, then the client connects to the app's endpoint on the Atlassian MCP server. The tools are read-only.</p>
+
+      <h2>Security reports</h2>
+      <p>If you believe you have found a vulnerability, write to the same address with the subject "Security". We acknowledge within two business days.</p>
+    </main>
+    <footer class="footer">
+      <div><strong>Relevo</strong> · © 2026 Juan Pablo Orjuela Rojas</div>
+      <nav aria-label="Legal"><a href="./privacy.html">Privacy</a><a href="./terms.html">Terms</a><a href="./support.html">Support</a></nav>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://juanporjuela.github.io/relevo/sitemap.xml
